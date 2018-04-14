@@ -1,0 +1,332 @@
+/*
+ Theme Name:   The Cricket Wizard
+ Theme URI:    https://www.understrap.com
+ Description:  UnderStrap Child Theme
+ Author:       A-Z Web Solutions
+ Author URI:   https://www.azwebsolutions.co.nz
+ Template:     understrap
+ Version:      0.3.5
+ License: GNU General Public License v2 or later
+ License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  understrap-child
+ Tags: one-column, custom-menu, featured-images, theme-options, translation-ready
+ GitHub Theme URI: holger1411/understrap-child.
+*/
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333;
+    font-weight: 300;
+}
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 40px;
+}
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 15px;
+}
+#header {
+    background-color: #404040;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ffffff;
+}
+#header .logo-wrapper {
+    position: relative;
+}
+#header .logo-wrapper a:after {
+    background: url("images/logo.png") no-repeat;
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 99px;
+    background-size: 70px 99px;
+    top: -10px;
+    right: -75px;
+}
+#header .logo-wrapper a {
+    display: inline-block;
+    position: relative;
+}
+#header .logo-wrapper a .the {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    display: block;
+    line-height: 5px;
+    color: #c0c0c0;
+    font-weight: 700;
+}
+#header .logo-wrapper a .cricket {
+    font-family: 'Sigmar One', cursive;
+    display: block;
+    color: #FEBC06;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+#header .logo-wrapper a .wizard {
+    font-family: 'Princess Sofia', cursive;
+    font-size: 50px;
+    line-height: 25px;
+    text-align: right;
+    color: #c0c0c0;
+    display: block;
+}
+#header .login-screen-wrapper {
+    position: absolute;
+    right: 15px;
+    color: #ffffff;
+    top: 0;
+    text-align: center;
+}
+#header .login-screen-wrapper h4 {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 5px;
+}
+#header .login-screen-wrapper .btn {
+    width:100%;
+    padding: 5px 0;
+}
+.home-banner {
+    position: relative;
+}
+.home-banner .banner-cta {
+    position: absolute;
+    color: #ffffff;
+    right: 20vw;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    top: 50%;
+    background-color: rgba(0,0,0,0.7);
+    padding: 50px 30px;
+    width: 30vw;
+    border-radius: 5px;
+}
+.home-banner .banner-cta .title {
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.home-banner .banner-cta p {
+    margin-bottom: 15px;
+}
+.home-banner .banner-cta strong {
+    display: block;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.btn-primary {
+    background-color: #de0800;
+    border-color: #de0800;
+}
+.btn-primary:hover {
+    background-color: #8e1600;
+    border-color: #8e1600;
+}
+.btn-default {
+    background-color: #0872e8;
+    border-color: #0872e8;
+    color: #ffffff;
+}
+.btn {
+    text-transform: uppercase;
+}
+.grey-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.grey-section p {
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    line-height: 34px;
+}
+.grey-section .enter-site {
+    margin-top: 20px;
+}
+.grey-section .enter-site a {
+    background-color: #212121 !important;
+    color: #FEBC06 !important;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+hr {
+    margin: 30px 0;
+    border-top: 1px solid #FEBC06;
+}
+.modal {
+    position: fixed;
+    z-index: 99;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+}
+#registrationModal.dropIn, #newCompModal.dropIn {
+    display: block;
+}
+.modal .modal-content {
+    width: 800px;
+    margin: auto;
+    padding: 50px 50px 50px 50px;
+    border: 1px solid #e4e4e4;
+}
+.modal .modal-content h2 {
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.form-group {
+    margin: 0 0 15px;
+}
+.modal .modal-content label {
+    margin-bottom: 5px;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+}
+.modal .modal-content .submit-wrapper {
+    margin-top: 20px;
+    text-align: right;
+}
+.ajax-loader {
+    position: absolute;
+}
+.modal .fa-times {
+    position: absolute;
+    color: #000000;
+    font-size: 30px;
+    top: 10px;
+    right: 30px;
+    cursor: pointer;
+}
+#main {
+    min-height: 100vh;
+}
+.wrapper {
+    background-color: #e4e4e4;
+}
+.spacer-30 {
+    height: 30px !important;
+}
+table {
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 0 !important;
+    font-weight: 400;
+}
+.table-responsive {
+    background-color: #ffffff;
+}
+table th {
+    border-top: 0 !important;
+}
+.table-striped tbody tr:nth-of-type(2n+1) {
+    background-color: rgba(228,228,228,0.2);
+}
+.table-striped thead tr {
+    background-color: #212121;
+    color: #ffffff;
+}
+.table-striped thead tr.warning {
+    background-color: #ffffff;
+    color: #666666;
+}
+.table-striped tbody tr {
+    background-color: #ffffff;
+}
+.table-striped tbody tr:hover {
+    cursor: pointer;
+}
+.table-striped tbody tr td {
+    color: #666666;
+}
+.results tr[visible='false'], .no-result {
+    display: none;
+}
+.results tr[visible='true']{
+    display:table-row;
+}
+.form-control {
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 0;
+    color: #666666;
+}
+.add-new-comp {
+    margin-left: 10px;
+    font-size: 20px;
+    line-height: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+#select-comp {
+    width: auto !important;
+    display: inline-block;
+}
+.steps-wrapper {
+    margin-top: 40px;
+    text-align: center;
+}
+.steps-wrapper .step {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    display: inline-block;
+    opacity: 0.5;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+}
+.steps-wrapper .step.active {
+    opacity: 1;
+    background-color: #f7c200;
+}
+.cred-form ul {
+    padding-left: 0;
+}
+.cred-form .wpt-form-radio {
+    margin-right: 5px;
+}
+.wpt-form-submit {
+    margin-top: 20px;
+}
+#footer {
+    background-color: #404040;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    border-top: 2px solid #ffffff;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+}
+#footer a {
+    color: #ff7f00;
+}
